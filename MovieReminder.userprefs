@@ -1,0 +1,9 @@
+﻿<Properties StartupConfiguration="{0AA4EF90-415D-4954-92D7-56CB7C673B67}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MovieReminder.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AABA9ED9-A76B-4C36-98F9-86CC477EFABB" />
+</Properties>
