@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:MovieReminder" 
+		x:Class="MovieReminder.MovieReminderPage"
+		xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+		mvvm:ViewModelLocator.AutowireViewModel="True"
+		Padding="15">
+				
+	   <local:SearchMovie/>
+   			<NavigationPage Title="Search Movie" Icon="schedule.png" >
+        		<x:Arguments>
+            		<local:SchedulePage />
+        	</x:Arguments>
+    </NavigationPage>
+</TabbedPage>

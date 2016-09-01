@@ -1,21 +1,23 @@
-﻿<Properties StartupConfiguration="{5518B476-3BF3-42B5-90D1-86183E5A083F}|Default" GitUserInfo="UsingGIT" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieReminder Status">
+﻿<Properties StartupConfiguration="{0AA4EF90-415D-4954-92D7-56CB7C673B67}|Default" GitUserInfo="UsingGIT" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="../../bckp/MovieReminder/MovieReminder_MovieDBWrap/Services/MovieService.cs" Line="6" Column="18" />
-      <File FileName="MovieReminder Status" />
+      <File FileName="MovieReminder/Views/MovieReminderPage.xaml.cs" Line="9" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MovieReminder" expanded="True" selected="True">
-            <Node name="MovieReminder" expanded="True" />
-            <Node name="MovieReminder.iOS" expanded="True" />
-            <Node name="MovieReminder_Models" expanded="True">
-              <Node name="Packages" expanded="True" />
+          <Node name="MovieReminder" expanded="True">
+            <Node name="MovieReminder" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="MovieReminderPage.xaml" expanded="True">
+                  <Node name="MovieReminderPage.xaml.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="App.xaml" expanded="True" />
             </Node>
+            <Node name="MovieReminder.iOS" expanded="True" />
             <Node name="MovieReminder_MovieDBWrap" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="Packages" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
           </Node>

@@ -1,29 +1,21 @@
-﻿using Xamarin.Forms;
+﻿using Prism.Unity;
+using Xamarin.Forms;
 
 namespace MovieReminder
 {
-	public partial class App : Application
+	public partial class App : PrismApplication
 	{
-		public App()
+		// add these methods
+		protected override void OnInitialized()
 		{
-			InitializeComponent();
-
-			MainPage = new MovieReminderPage();
+			NavigationService.NavigateAsync("MovieReminderPage");
 		}
 
-		protected override void OnStart()
+		protected override void RegisterTypes()
 		{
-			// Handle when your app starts
-		}
+			//Container.RegisterTypeForNavigation<MovieReminderPage,MovieReminderPageViewModel>();
+			Container.RegisterTypeForNavigation<MovieReminderPage>();
 
-		protected override void OnSleep()
-		{
-			// Handle when your app sleeps
-		}
-
-		protected override void OnResume()
-		{
-			// Handle when your app resumes
 		}
 	}
 }

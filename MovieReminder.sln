@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReminder.iOS", "iOS\Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReminder.Droid", "Droid\MovieReminder.Droid.csproj", "{5518B476-3BF3-42B5-90D1-86183E5A083F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReminder_Models", "..\..\bckp\MovieReminder\MovieReminder_Models\MovieReminder_Models.csproj", "{6E2F6303-722E-481A-BF14-9F30D6C48F71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReminder_Models", "MovieReminder_Models\MovieReminder_Models.csproj", "{6E2F6303-722E-481A-BF14-9F30D6C48F71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReminder_MovieDBWrap", "..\..\bckp\MovieReminder\MovieReminder_MovieDBWrap\MovieReminder_MovieDBWrap.csproj", "{64F09AD6-6064-4D7A-B87C-81BBC82ABBD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReminder_MovieDBWrap", "MovieReminder_MovieDBWrap\MovieReminder_MovieDBWrap.csproj", "{64F09AD6-6064-4D7A-B87C-81BBC82ABBD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
