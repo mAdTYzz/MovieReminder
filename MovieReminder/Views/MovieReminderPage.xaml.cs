@@ -6,7 +6,10 @@ namespace MovieReminder
 	{
 		public MovieReminderPage()
 		{
-			//InitializeComponent();
+			InitializeComponent();
+
+			Children.Add(new SearchPage());
+			Children.Add(new UpcomingMoviesPage());
 		}
 	}
 }

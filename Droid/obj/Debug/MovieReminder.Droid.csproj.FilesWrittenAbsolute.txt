@@ -35,3 +35,6 @@
 /Users/olik_/Code/GitHub/MovieReminder/Droid/bin/Debug/Prism.Unity.Forms.dll
 /Users/olik_/Code/GitHub/MovieReminder/Droid/bin/Debug/MovieReminder.dll
 /Users/olik_/Code/GitHub/MovieReminder/Droid/bin/Debug/MovieReminder.dll.mdb
+/Users/olik_/Code/GitHub/MovieReminder/Droid/bin/Debug/MovieReminder_Models.dll
+/Users/olik_/Code/GitHub/MovieReminder/Droid/bin/Debug/MovieReminder_Models.dll.mdb
+/Users/olik_/Code/GitHub/MovieReminder/Droid/obj/Debug/MonoAndroid,Version=v7.0.AssemblyAttribute.cs

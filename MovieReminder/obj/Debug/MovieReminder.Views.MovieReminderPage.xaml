@@ -6,12 +6,7 @@
 		x:Class="MovieReminder.MovieReminderPage"
 		xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
 		mvvm:ViewModelLocator.AutowireViewModel="True"
-		Padding="15">
-	
-	   <local:TodayPage />
-   			<NavigationPage Title="Schedule" Icon="schedule.png">
-        		<x:Arguments>
-            		<local:SchedulePage />
-        	</x:Arguments>
-    </NavigationPage>
+		Padding="10"
+		Title="MovieReminder">
+
 </TabbedPage>

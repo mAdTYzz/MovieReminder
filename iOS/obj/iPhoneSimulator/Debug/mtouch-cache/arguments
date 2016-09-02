@@ -1,6 +1,6 @@
-# Version: 9.99.4.23 (cycle8: f63ecd7)
-# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/9.99.4.23/lib/mtouch/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/9.99.4.23/lib/mtouch/mtouch.exe \
+# Version: 9.99.5.54 (cycle8: 974ea0b)
+# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/9.99.5.54/lib/mtouch/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/9.99.5.54/lib/mtouch/mtouch.exe \
 	--cache \
 	/Users/olik_/Code/GitHub/MovieReminder/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
@@ -9,16 +9,16 @@
 	MovieReminder.iOS \
 	--fastdev \
 	--debug \
-	--linksdkonly \
+	--nolink \
 	--sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--sdk \
-	9.3 \
+	10.0 \
 	--targetver \
 	8.0 \
 	--http-message-handler=HttpClientHandler \
 	--tls-provider=default \
-	--abi=i386 \
+	"--abi=i386,x86_64" \
 	--symbollist \
 	/Users/olik_/Code/GitHub/MovieReminder/iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
@@ -179,8 +179,6 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.ObjectModel.dll \
 	-r \
-	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Private.CoreLib.InteropServices.dll \
-	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Reflection.Primitives.dll \
@@ -330,6 +328,8 @@
 	/Users/olik_/Code/GitHub/MovieReminder/packages/Prism.Unity.Forms.6.2.0/lib/Xamarin.iOS1.0/Prism.Unity.Forms.dll \
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieReminder.dll \
+	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieReminder_Models.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
 	/Users/olik_/Code/GitHub/MovieReminder/iOS/bin/iPhoneSimulator/Debug//MovieReminder.iOS.exe \

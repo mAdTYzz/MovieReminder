@@ -4,7 +4,7 @@
   <uses-sdk android:minSdkVersion="15" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="MovieReminder" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+  <application android:label="MovieReminder" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="MovieReminder.Droid" android:theme="@style/MyTheme" android:name="md5a3773b9df45cd71f14ca793b59f6323e.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

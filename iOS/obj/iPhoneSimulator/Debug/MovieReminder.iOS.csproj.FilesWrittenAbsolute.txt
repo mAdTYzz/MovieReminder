@@ -18,3 +18,5 @@
 /Users/olik_/Code/GitHub/MovieReminder/iOS/bin/iPhoneSimulator/Debug/Prism.Unity.Forms.dll
 /Users/olik_/Code/GitHub/MovieReminder/iOS/bin/iPhoneSimulator/Debug/MovieReminder.dll
 /Users/olik_/Code/GitHub/MovieReminder/iOS/bin/iPhoneSimulator/Debug/MovieReminder.dll.mdb
+/Users/olik_/Code/GitHub/MovieReminder/iOS/bin/iPhoneSimulator/Debug/MovieReminder_Models.dll
+/Users/olik_/Code/GitHub/MovieReminder/iOS/bin/iPhoneSimulator/Debug/MovieReminder_Models.dll.mdb

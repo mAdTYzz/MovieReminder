@@ -49,3 +49,4 @@
 /Users/olik_/Code/GitHub/MovieReminder/Droid/obj/Debug/android/assets/System.IO.dll
 /Users/olik_/Code/GitHub/MovieReminder/Droid/obj/Debug/android/assets/System.Dynamic.Runtime.dll
 /Users/olik_/Code/GitHub/MovieReminder/Droid/obj/Debug/android/assets/System.Text.RegularExpressions.dll
+/Users/olik_/Code/GitHub/MovieReminder/Droid/obj/Debug/android/assets/MovieReminder_Models.dll

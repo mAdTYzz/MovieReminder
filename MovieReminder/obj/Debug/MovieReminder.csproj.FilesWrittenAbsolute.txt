@@ -29,3 +29,7 @@
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Guards.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/System.Net.Http.Primitives.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Tracing.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/obj/Debug/MovieReminder.Views.SearchPage.xaml
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/obj/Debug/MovieReminder.Views.SearchPage.xaml.g.cs
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/obj/Debug/MovieReminder.Views.UpcomingMoviesPage.xaml
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/obj/Debug/MovieReminder.Views.UpcomingMoviesPage.xaml.g.cs
