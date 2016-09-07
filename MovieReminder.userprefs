@@ -1,31 +1,14 @@
-﻿<Properties StartupConfiguration="{0AA4EF90-415D-4954-92D7-56CB7C673B67}|Default" GitUserInfo="UsingGIT" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="MovieReminder" expanded="True">
-            <Node name="MovieReminder" expanded="True">
-              <Node name="Packages" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="MovieReminderPage.xaml" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="MovieReminder.Droid" expanded="True" />
-            <Node name="MovieReminder.iOS" expanded="True">
-              <Node name="Packages" expanded="True" />
-            </Node>
-            <Node name="MovieReminder_MovieDBWrap" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
+﻿<Properties StartupConfiguration="{5D023465-A81C-4AA3-BEAA-7C9B453209EF}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieReminder.iOS/Main.cs">
+    <Files>
+      <File FileName="MovieReminder/Views/MainPage.xaml.cs" Line="5" Column="44" />
+      <File FileName="MovieReminder.iOS/Main.cs" Line="17" Column="1" />
+    </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MovieReminder.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DB2B54BB-3B96-4917-A219-4A6976C4FA07" />
-  <MonoDevelop.Ide.ItemProperties.MovieReminder.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86_X86_google_apis" />
+  <MonoDevelop.Ide.ItemProperties.MovieReminder.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.14CB62FE-D604-454F-B2B8-9D828948BDBE" />
 </Properties>
