@@ -1,9 +1,21 @@
 ﻿<Properties StartupConfiguration="{5D023465-A81C-4AA3-BEAA-7C9B453209EF}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieReminder.iOS/Main.cs">
-    <Files>
-      <File FileName="MovieReminder/Views/MainPage.xaml.cs" Line="5" Column="44" />
-      <File FileName="MovieReminder.iOS/Main.cs" Line="17" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MovieReminder" expanded="True">
+            <Node name="MovieReminder" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="MainPage.xaml" expanded="True" />
+                <Node name="SearchPage.xaml" selected="True" />
+              </Node>
+            </Node>
+            <Node name="MovieReminder.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -11,4 +23,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.MovieReminder.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.14CB62FE-D604-454F-B2B8-9D828948BDBE" />
+  <MonoDevelop.Ide.ItemProperties.MovieReminder.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
 </Properties>

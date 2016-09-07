@@ -33,3 +33,9 @@
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Refractored.Xam.Settings.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Xamarin.Forms.Dynamic.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Xamarin.Forms.Player.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Plugin.Settings.Abstractions.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Plugin.Settings.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/obj/Debug/MovieReminder.Views.SearchPage.xaml
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/obj/Debug/MovieReminder.Views.UpcomingPage.xaml
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/obj/Debug/MovieReminder.Views.SearchPage.xaml.g.cs
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/obj/Debug/MovieReminder.Views.UpcomingPage.xaml.g.cs

@@ -139,8 +139,8 @@ class MonoPackageManager_Resources {
 		"System.IO.dll",
 		"System.Dynamic.Runtime.dll",
 		"System.Text.RegularExpressions.dll",
-		"Refractored.Xam.Settings.dll",
-		"Refractored.Xam.Settings.Abstractions.dll",
+		"Plugin.Settings.dll",
+		"Plugin.Settings.Abstractions.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

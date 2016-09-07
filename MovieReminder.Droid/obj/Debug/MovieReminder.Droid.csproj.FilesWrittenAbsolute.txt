@@ -34,3 +34,5 @@
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/MovieReminder.dll.mdb
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/Refractored.Xam.Settings.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/Refractored.Xam.Settings.Abstractions.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/Plugin.Settings.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/Plugin.Settings.Abstractions.dll

@@ -18,3 +18,7 @@
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Prism.Unity.Forms.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/MovieReminder.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/MovieReminder.dll.mdb
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Refractored.Xam.Settings.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Refractored.Xam.Settings.Abstractions.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Plugin.Settings.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Plugin.Settings.Abstractions.dll
