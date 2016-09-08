@@ -49,5 +49,6 @@
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/System.IO.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/System.Dynamic.Runtime.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/System.Text.RegularExpressions.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/MovieReminder_Models.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/Plugin.Settings.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/Plugin.Settings.Abstractions.dll

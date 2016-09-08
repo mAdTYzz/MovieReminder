@@ -5,10 +5,38 @@
 		xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
 		prism:ViewModelLocator.AutowireViewModel="True" 
 		x:Class="MovieReminder.SearchPage"
-		Title="SearchPage"
-		Padding="20">
+		Title="Search Movie"
+		Padding="5">
 	
 	<ContentPage.Content>
-		<Label Text="SearchPage"/>
+		<StackLayout Margin="0,15,0,0">
+			<Label Text="Search Movie" FontSize="14" FontAttributes="Bold"/>
+			<Image Source="{Binding Path=SearchedMovie.PosterURI}" Margin="0,5,0,0"
+					HorizontalOptions="Fill" HeightRequest="320"/>
+
+			<StackLayout Orientation="Horizontal">
+				<Entry Placeholder="Title..." Text="{Binding Path=SearchedMovie.Title}" 
+					HorizontalOptions="FillAndExpand" FontSize="14" FontAttributes="Bold"/>
+				<Button Text="S"/>
+			</StackLayout>
+		
+			<StackLayout Margin="0,5,0,0">
+				<Label Text="Theater release date" FontSize="14" FontAttributes="Bold"/>
+				<StackLayout Orientation="Horizontal">
+					<DatePicker Date="{Binding Path=SearchedMovie.Theater}" 
+						HorizontalOptions="FillAndExpand"
+						IsEnabled="false"/>
+					<Button Text="Add"/>
+				</StackLayout>
+
+				<Label Text="Physical media release date" FontSize="14" FontAttributes="Bold"/>
+				<StackLayout Orientation="Horizontal">
+					<DatePicker Date="{Binding Path=SearchedMovie.Dvd}" 
+						HorizontalOptions="FillAndExpand"
+						IsEnabled="false"/>
+					<Button Text="Add"/>
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

@@ -45,6 +45,7 @@
     <Compile Include="Views\UpcomingPage.xaml.cs">
       <DependentUpon>UpcomingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\SearchPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">

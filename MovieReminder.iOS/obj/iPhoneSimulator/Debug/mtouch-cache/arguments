@@ -329,6 +329,8 @@
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieReminder.dll \
 	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieReminder_Models.dll \
+	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Plugin.Settings.dll \
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Plugin.Settings.Abstractions.dll \

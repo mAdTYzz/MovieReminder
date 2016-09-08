@@ -1,17 +1,24 @@
 ﻿<Properties StartupConfiguration="{5D023465-A81C-4AA3-BEAA-7C9B453209EF}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="MovieReminder/ViewModels/SearchPageViewModel.cs" Line="25" Column="105" />
+      <File FileName="MovieReminder_Models/Models/Movie.cs" Line="6" Column="33" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MovieReminder" expanded="True">
             <Node name="MovieReminder" expanded="True">
               <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="MainPage.xaml" expanded="True" />
-                <Node name="SearchPage.xaml" selected="True" />
-              </Node>
+              <Node name="Views" expanded="True" />
             </Node>
             <Node name="MovieReminder.iOS" expanded="True" />
+            <Node name="MovieReminder_Models" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Movie.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>

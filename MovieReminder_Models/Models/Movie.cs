@@ -3,7 +3,7 @@ using Prism.Mvvm;
 
 namespace MovieReminder_Models
 {
-	public class Movie: BindableBase
+	public class Movie:BindableBase
 	{
 		
 		private string _id;
@@ -47,6 +47,48 @@ namespace MovieReminder_Models
 			get { return _posterURI; }
 			set { SetProperty(ref _posterURI, value); }
 		}
+
+		//private string _id;
+		//public string ID
+		//{
+		//	get;
+		//	set;
+		//}
+
+		//private string _title;
+		//public string Title
+		//{
+		//	get;
+		//	set;
+		//}
+
+		//private int _year;
+		//public int Year
+		//{
+		//	get;
+		//	set;
+		//}
+
+		//private DateTime _theater;
+		//public DateTime Theater
+		//{
+		//	get;
+		//	set;
+		//}
+
+		//private DateTime _dvd;
+		//public DateTime Dvd
+		//{
+		//	get;
+		//	set;
+		//}
+
+		//private string _posterURI;
+		//public string PosterURI
+		//{
+		//	get;
+		//	set;
+		//}
 
 		public Movie()
 		{

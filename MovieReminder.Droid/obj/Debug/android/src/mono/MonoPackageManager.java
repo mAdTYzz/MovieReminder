@@ -139,6 +139,7 @@ class MonoPackageManager_Resources {
 		"System.IO.dll",
 		"System.Dynamic.Runtime.dll",
 		"System.Text.RegularExpressions.dll",
+		"MovieReminder_Models.dll",
 		"Plugin.Settings.dll",
 		"Plugin.Settings.Abstractions.dll",
 	};

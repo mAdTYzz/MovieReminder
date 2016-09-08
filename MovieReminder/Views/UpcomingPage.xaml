@@ -5,7 +5,7 @@
 		xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
 		prism:ViewModelLocator.AutowireViewModel="True" 
 		x:Class="MovieReminder.UpcomingPage"
-		Title="UpcomingPage"
+		Title="Upcoming Movies"
 		Padding="20">
 	
 	<ContentPage.Content>
