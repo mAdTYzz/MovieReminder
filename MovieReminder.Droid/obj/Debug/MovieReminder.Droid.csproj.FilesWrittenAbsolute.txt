@@ -38,3 +38,11 @@
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/Plugin.Settings.Abstractions.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/MovieReminder_Models.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/MovieReminder_Models.dll.mdb
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/MovieReminder_MovieDBWrap.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/MovieReminder_MovieDBWrap.dll.mdb
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/Hasseware.Net.TMDb.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/CrossPlatformLibrary.Geolocation.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/Newtonsoft.Json.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/CrossPlatformLibrary.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/Guards.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/bin/Debug/Tracing.dll

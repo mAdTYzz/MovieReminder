@@ -7,6 +7,7 @@ using System.Net.TMDb;
 using System.Net.Http;
 using System.Net;
 using Newtonsoft.Json;
+using Prism.Unity;
 using CrossPlatformLibrary;
 
 namespace MovieReminder_MovieDBWrap
@@ -17,23 +18,47 @@ namespace MovieReminder_MovieDBWrap
 		{
 		}
 
-		public async Task<System.Net.TMDb.Movies> SearchMovie(string movieTitle)
+		public List<MovieReminder_Models.Movie> SearchMovie(string movieTitle)
 		{
 			System.Net.TMDb.Movies foundMoviesApi= new Movies();
+			List<MovieReminder_Models.Movie> movieReminderMovieTypeList = new List<MovieReminder_Models.Movie>();
 
 			try
 			{
 				using (var tmdbClient = new ServiceClient(MovieReminder_Models.AppConstantSettings.apiKey))
 				{
-					foundMoviesApi = await tmdbClient.Movies.SearchAsync(movieTitle, "SE", true, null, true, 1, new CancellationToken());
+					foundMoviesApi = tmdbClient.Movies.SearchAsync(movieTitle, "SE", true, null, true, 1, new CancellationToken()).Result;
 				}
-				return foundMoviesApi;
+
+				foreach (var movieApi in foundMoviesApi.Results)
+				{
+					MovieReminder_Models.Movie mv = new MovieReminder_Models.Movie()
+					{
+						ID = movieApi.Id.ToString(),
+						Title = movieApi.Title,
+						PosterURI = String.Format("https://image.tmdb.org/t/p/w1280{0}",movieApi.Poster),
+						PlotSummary = movieApi.Overview,
+						Theater = (DateTime)movieApi.ReleaseDate,
+					};
+
+					foreach (var relDate in movieApi.AllReleases.Results)
+					{
+						mv.Dvd = (from x in relDate.Releases
+								  where x.Type == 5
+						          select x.RelDate).FirstOrDefault();
+					}
+
+					movieReminderMovieTypeList.Add(mv);
+				}
+				return movieReminderMovieTypeList;
 			}
-			catch
+			catch(Exception ex)
 			{				
 				return null;
 			}
 		}
+
+	//private List<MovieReminder_Models.Movie> MovieListTypeConverter
 
 		/// <summary>
 		/// Used to get countryCode

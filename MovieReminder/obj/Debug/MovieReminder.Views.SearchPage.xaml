@@ -11,32 +11,47 @@
 	<ContentPage.Content>
 		<StackLayout Margin="0,15,0,0">
 			<Label Text="Search Movie" FontSize="14" FontAttributes="Bold"/>
+			<Label Text="{Binding Path=SearchedMovie.PlotSummary}" 
+									HorizontalOptions="FillAndExpand"/>
 			<Image Source="{Binding Path=SearchedMovie.PosterURI}" Margin="0,5,0,0"
-					HorizontalOptions="Fill" HeightRequest="320"/>
+				HorizontalOptions="Fill" HeightRequest="320" IsVisible="{Binding Path=IsMovieFound}"/>
+			<ScrollView>
+				<StackLayout>
+					<SearchBar Placeholder="Title..." Text="{Binding Path=SearchedMovie.Title}" 
+						HorizontalOptions="FillAndExpand" FontSize="14" FontAttributes="Bold"
+						SearchCommand="{Binding Path=SearchCommand}"/>
 
-			<StackLayout Orientation="Horizontal">
-				<Entry Placeholder="Title..." Text="{Binding Path=SearchedMovie.Title}" 
-					HorizontalOptions="FillAndExpand" FontSize="14" FontAttributes="Bold"/>
-				<Button Text="S"/>
-			</StackLayout>
-		
-			<StackLayout Margin="0,5,0,0">
-				<Label Text="Theater release date" FontSize="14" FontAttributes="Bold"/>
-				<StackLayout Orientation="Horizontal">
-					<DatePicker Date="{Binding Path=SearchedMovie.Theater}" 
-						HorizontalOptions="FillAndExpand"
-						IsEnabled="false"/>
-					<Button Text="Add"/>
-				</StackLayout>
+					<StackLayout>
+						<Button Text="Plot summary" FontSize="14" FontAttributes="Bold" 
+							HorizontalOptions="Start" HeightRequest="15" 
+							Command="{Binding Path=TogglePlotCommand}"/>
+						
+						<Frame OutlineColor="Silver" HorizontalOptions="FillAndExpand" 
+								HasShadow="false" IsVisible="{Binding Path=IsPlotVisible}">
+							<Label Text="{Binding Path=SearchedMovie.PlotSummary}" 
+									HorizontalOptions="FillAndExpand"/>
+						</Frame>
+					</StackLayout>
+					
+					<StackLayout Margin="0,5,0,0">
+						<Label Text="Theater release date" FontSize="14" FontAttributes="Bold"/>
+						<StackLayout Orientation="Horizontal">
+							<DatePicker Date="{Binding Path=SearchedMovie.Theater}" 
+								HorizontalOptions="FillAndExpand"
+								IsEnabled="false"/>
+							<Button Text="Add" FontSize="14" FontAttributes="Bold"/>
+						</StackLayout>
 
-				<Label Text="Physical media release date" FontSize="14" FontAttributes="Bold"/>
-				<StackLayout Orientation="Horizontal">
-					<DatePicker Date="{Binding Path=SearchedMovie.Dvd}" 
-						HorizontalOptions="FillAndExpand"
-						IsEnabled="false"/>
-					<Button Text="Add"/>
+						<Label Text="Physical media release date" FontSize="14" FontAttributes="Bold"/>
+						<StackLayout Orientation="Horizontal">
+							<DatePicker Date="{Binding Path=SearchedMovie.Dvd}" 
+								HorizontalOptions="FillAndExpand"
+								IsEnabled="false"/>
+							<Button Text="Add" FontSize="14" FontAttributes="Bold"/>
+						</StackLayout>
+					</StackLayout>
 				</StackLayout>
-			</StackLayout>
+			</ScrollView>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

@@ -24,3 +24,11 @@
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Plugin.Settings.Abstractions.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/MovieReminder_Models.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/MovieReminder_Models.dll.mdb
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/MovieReminder_MovieDBWrap.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/MovieReminder_MovieDBWrap.dll.mdb
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Hasseware.Net.TMDb.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/CrossPlatformLibrary.Geolocation.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/CrossPlatformLibrary.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Guards.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Tracing.dll

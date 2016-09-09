@@ -1,23 +1,27 @@
 ﻿<Properties StartupConfiguration="{5D023465-A81C-4AA3-BEAA-7C9B453209EF}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieReminder/ViewModels/SearchPageViewModel.cs">
     <Files>
-      <File FileName="MovieReminder/ViewModels/SearchPageViewModel.cs" Line="25" Column="105" />
-      <File FileName="MovieReminder_Models/Models/Movie.cs" Line="6" Column="33" />
+      <File FileName="MovieReminder/ViewModels/SearchPageViewModel.cs" Line="106" Column="6" />
+      <File FileName="MovieReminder_MovieDBWrap/Services/MovieService.cs" Line="33" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MovieReminder" expanded="True">
             <Node name="MovieReminder" expanded="True">
-              <Node name="ViewModels" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="SearchPageViewModel.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True" />
             </Node>
             <Node name="MovieReminder.iOS" expanded="True" />
             <Node name="MovieReminder_Models" expanded="True">
+              <Node name="Packages" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="MovieReminder_MovieDBWrap" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Movie.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -26,7 +30,11 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/ViewModels/SearchPageViewModel.cs" line="111" column="1" />
+      <Breakpoint enabled="false" file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder_MovieDBWrap/Services/MovieService.cs" line="56" column="1" />
+      <Breakpoint enabled="false" file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/ViewModels/SearchPageViewModel.cs" line="108" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.MovieReminder.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.14CB62FE-D604-454F-B2B8-9D828948BDBE" />

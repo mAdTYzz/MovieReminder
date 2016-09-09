@@ -1,5 +1,6 @@
 ﻿using System;
 using Prism.Mvvm;
+using Xamarin.Forms;
 
 namespace MovieReminder_Models
 {
@@ -27,6 +28,13 @@ namespace MovieReminder_Models
 			set { SetProperty(ref _year, value); }
 		}
 
+		private string _plotSummary;
+		public string PlotSummary
+		{
+			get { return _plotSummary; }
+			set { SetProperty(ref _plotSummary, value); }
+		}
+
 		private DateTime _theater;
 		public DateTime Theater
 		{
@@ -47,48 +55,6 @@ namespace MovieReminder_Models
 			get { return _posterURI; }
 			set { SetProperty(ref _posterURI, value); }
 		}
-
-		//private string _id;
-		//public string ID
-		//{
-		//	get;
-		//	set;
-		//}
-
-		//private string _title;
-		//public string Title
-		//{
-		//	get;
-		//	set;
-		//}
-
-		//private int _year;
-		//public int Year
-		//{
-		//	get;
-		//	set;
-		//}
-
-		//private DateTime _theater;
-		//public DateTime Theater
-		//{
-		//	get;
-		//	set;
-		//}
-
-		//private DateTime _dvd;
-		//public DateTime Dvd
-		//{
-		//	get;
-		//	set;
-		//}
-
-		//private string _posterURI;
-		//public string PosterURI
-		//{
-		//	get;
-		//	set;
-		//}
 
 		public Movie()
 		{
