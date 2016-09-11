@@ -28,32 +28,53 @@ namespace MovieReminder_Models
 			set { SetProperty(ref _year, value); }
 		}
 
-		private string _plotSummary;
-		public string PlotSummary
+		private string _plot;
+		public string Plot
 		{
-			get { return _plotSummary; }
-			set { SetProperty(ref _plotSummary, value); }
+			get { return _plot; }
+			set { SetProperty(ref _plot, value); }
 		}
 
-		private DateTime _theater;
-		public DateTime Theater
+		private string _released;
+		public string Released
 		{
-			get { return _theater; }
-			set { SetProperty(ref _theater, value); }
+			get { return _released; }
+			set { SetProperty(ref _released, value); }
 		}
 
-		private DateTime _dvd;
-		public DateTime Dvd
+		private DateTime _theaterReleaseDate;
+		public DateTime TheaterReleaseDate
+		{
+			get { return _theaterReleaseDate; }
+			set { SetProperty(ref _theaterReleaseDate, value); }
+		}
+
+		private string _dvd;
+		public string Dvd
 		{
 			get { return _dvd; }
 			set { SetProperty(ref _dvd, value); }
 		}
 
-		private string _posterURI;
-		public string PosterURI
+		private DateTime _dvdReleaseDate;
+		public DateTime DvdReleaseDate
 		{
-			get { return _posterURI; }
-			set { SetProperty(ref _posterURI, value); }
+			get { return _dvdReleaseDate; }
+			set { SetProperty(ref _dvdReleaseDate, value); }
+		}
+
+		private string _poster;
+		public string Poster
+		{
+			get { return _poster; }
+			set { SetProperty(ref _poster, value); }
+		}
+
+		private bool _foundWithApi=false;
+		public bool FoundWithApi
+		{
+			get { return _foundWithApi; }
+			set { SetProperty(ref _foundWithApi, value); }
 		}
 
 		public Movie()

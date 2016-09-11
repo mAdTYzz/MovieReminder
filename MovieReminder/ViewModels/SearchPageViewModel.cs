@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using Prism.Commands;
 using Prism.Mvvm;
 
@@ -51,8 +52,6 @@ namespace MovieReminder
 			set { SetProperty(ref _foundMoviesList, value); }
 		}
 
-		MovieReminder_MovieDBWrap.MovieService mvService;
-
 		#endregion
 
 		public SearchPageViewModel()
@@ -62,21 +61,13 @@ namespace MovieReminder
 
 			//SearchedMovie.PropertyChanged += SearchedMovie_PropertyChanged; //THROWS EXCEPTION!!!!
 
-			SearchedMovie = new MovieReminder_Models.Movie()
-			{
-				ID = "12344",
-				//Title = "Tee",
-				Year=2005,
-				PlotSummary="blablablablablabla",
-				PosterURI = "http://cdn.collider.com/wp-content/uploads/2016/06/stranger-things-poster-netflix1.jpg",
-				Theater = DateTime.Today.AddDays(10),
-				Dvd = DateTime.Today.AddDays(20)
-			};
+			SearchedMovie = new MovieReminder_Models.Movie();
 		}
 
-		bool CanGetMovie()
+		private bool CanGetMovie()
 		{
 			bool canGetMovie = false;
+			IsMovieFound = false;
 
 			if (SearchedMovie.Title !=null)
 			{
@@ -90,22 +81,21 @@ namespace MovieReminder
 			return canGetMovie;
 		}
 
-	    void GetMovie()
+	    private void GetMovie()
 		{
 			try
 			{
-				mvService = new MovieReminder_MovieDBWrap.MovieService();
+				//Reseting the old values
+				SearchedMovie = new MovieReminder_Models.Movie(){Title=SearchedMovie.Title};
 
-				FoundMoviesList = new List<MovieReminder_Models.Movie>();
+				MovieService mvService = new MovieService(){MovieTitle=SearchedMovie.Title};
 
-				FoundMoviesList = mvService.SearchMovie(SearchedMovie.Title);
+				SearchedMovie= mvService.SearchMovie();
 
-				if (FoundMoviesList.Count>0)
+				if (SearchedMovie.FoundWithApi==true)
 				{
-					SearchedMovie = FoundMoviesList[0];
+					IsMovieFound = true;
 				}
-
-				IsMovieFound = true;
 			}
 			catch(Exception ex)
 			{

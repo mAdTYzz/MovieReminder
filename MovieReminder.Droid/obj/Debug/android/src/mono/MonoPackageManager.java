@@ -22,12 +22,14 @@ public class MonoPackageManager {
 	public static void LoadApplication (Context context, ApplicationInfo runtimePackage, String[] apks)
 	{
 		synchronized (lock) {
+			if (context instanceof android.app.Application) {
+				Context = context;
+			}
 			if (!initialized) {
 				android.content.IntentFilter timezoneChangedFilter  = new android.content.IntentFilter (
 						android.content.Intent.ACTION_TIMEZONE_CHANGED
 				);
 				context.registerReceiver (new mono.android.app.NotifyTimeZoneChanges (), timezoneChangedFilter);
-				setContext (context);
 				
 				System.loadLibrary("monodroid");
 				Locale locale       = Locale.getDefault ();
@@ -62,9 +64,7 @@ public class MonoPackageManager {
 
 	public static void setContext (Context context)
 	{
-		if (Context == null) {
-			Context = context;
-		}
+		// Ignore; vestigial
 	}
 
 	static String getNativeLibraryPath (Context context)
@@ -140,21 +140,10 @@ class MonoPackageManager_Resources {
 		"System.Dynamic.Runtime.dll",
 		"System.Text.RegularExpressions.dll",
 		"MovieReminder_Models.dll",
-		"MovieReminder_MovieDBWrap.dll",
-		"Hasseware.Net.TMDb.dll",
-		"Newtonsoft.Json.dll",
-		"System.Xml.XDocument.dll",
-		"System.Runtime.Serialization.Primitives.dll",
-		"System.Text.Encoding.dll",
-		"System.Text.Encoding.Extensions.dll",
-		"CrossPlatformLibrary.Geolocation.dll",
-		"CrossPlatformLibrary.dll",
-		"Tracing.dll",
-		"Guards.dll",
 		"Plugin.Settings.dll",
 		"Plugin.Settings.Abstractions.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_23";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_24";
 }

@@ -331,23 +331,11 @@
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieReminder_Models.dll \
 	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieReminder_MovieDBWrap.dll \
-	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Plugin.Settings.dll \
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Plugin.Settings.Abstractions.dll \
 	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Hasseware.Net.TMDb.dll \
-	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/CrossPlatformLibrary.Geolocation.dll \
-	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Newtonsoft.Json.dll \
-	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/CrossPlatformLibrary.dll \
-	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Guards.dll \
-	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Tracing.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug//MovieReminder.iOS.exe \

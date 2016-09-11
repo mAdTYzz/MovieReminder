@@ -39,3 +39,5 @@
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder/obj/Debug/MovieReminder.Views.UpcomingPage.xaml
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder/obj/Debug/MovieReminder.Views.SearchPage.xaml.g.cs
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder/obj/Debug/MovieReminder.Views.UpcomingPage.xaml.g.cs
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieService.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieService.dll.mdb
