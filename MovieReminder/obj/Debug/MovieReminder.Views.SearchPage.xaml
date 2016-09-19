@@ -7,10 +7,10 @@
 		x:Class="MovieReminder.SearchPage"
 		Title="Search Movie"
 		Padding="5">
-	
+
 	<ContentPage.Content>
 		<StackLayout Margin="0,15,0,0">
-			<Label Text="Search Movie" FontSize="14" FontAttributes="Bold"/>
+			<Label Text="Search Movie" FontSize="14" FontAttributes="Bold" TextColor="#F0ED4A"/>
 			<Label Text="{Binding Path=SearchedMovie.PlotSummary}" 
 									HorizontalOptions="FillAndExpand"/>
 			<Image Source="{Binding Path=SearchedMovie.Poster}" Margin="0,5,0,0"
@@ -24,7 +24,8 @@
 					<StackLayout>
 						<Button Text="Plot summary" FontSize="14" FontAttributes="Bold" 
 							HorizontalOptions="Start" HeightRequest="15" 
-							Command="{Binding Path=TogglePlotCommand}"/>
+							Command="{Binding Path=TogglePlotCommand}"
+							TextColor="#F0ED4A"/>
 						
 						<Frame OutlineColor="Silver" HorizontalOptions="FillAndExpand" 
 								HasShadow="false" IsVisible="{Binding Path=IsPlotVisible}">
@@ -33,22 +34,27 @@
 						</Frame>
 					</StackLayout>
 					<StackLayout Margin="0,5,0,0">
-						<Label Text="Theater release date" FontSize="14" FontAttributes="Bold"/>
+						<Label Text="Theater release date" FontSize="14" FontAttributes="Bold"
+							TextColor="#F0ED4A"/>
 						<StackLayout Orientation="Horizontal">
 							<DatePicker Date="{Binding Path=SearchedMovie.TheaterReleaseDate}" 
 								HorizontalOptions="FillAndExpand"
 								IsEnabled="false"
 								Format="yyyy-MM-dd"/>
-							<Button Text="Add" FontSize="14" FontAttributes="Bold"/>
+							<Button Text="Add Reminder" FontSize="14" FontAttributes="Bold" 
+								TextColor="#F0ED4A" BorderWidth="2" BorderColor="#F0ED4A"
+								Style="{StaticResource buttonStyle}"/>
 						</StackLayout>
 
-						<Label Text="Physical media release date" FontSize="14" FontAttributes="Bold"/>
+						<Label Text="Physical media release date" FontSize="14" FontAttributes="Bold"
+							TextColor="#F0ED4A"/>
 						<StackLayout Orientation="Horizontal">
 							<DatePicker Date="{Binding Path=SearchedMovie.DvdReleaseDate}" 
 								HorizontalOptions="FillAndExpand"
 								IsEnabled="false"
 								Format="yyyy-MM-dd"/>
-							<Button Text="Add" FontSize="14" FontAttributes="Bold"/>
+							<Button Text="Add Reminder" FontSize="14" FontAttributes="Bold"
+								TextColor="#F0ED4A"/>
 						</StackLayout>
 					</StackLayout>
 				</StackLayout>

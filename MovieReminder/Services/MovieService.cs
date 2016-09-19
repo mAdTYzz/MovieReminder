@@ -88,3 +88,8 @@ namespace MovieReminder
 		}
 	}
 }
+
+/*
+ * TODO:
+ * If movie is not found exception is thrown
+*/

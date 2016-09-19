@@ -2,15 +2,18 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/__library_projects__/ModernHttpClient/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform/library_project_imports/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/ModernHttpClient/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Xamarin.Forms.Platform/library_project_imports/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/__library_projects__/ModernHttpClient.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>

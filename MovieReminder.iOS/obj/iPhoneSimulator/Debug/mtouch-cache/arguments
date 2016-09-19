@@ -1,6 +1,6 @@
-# Version: 10.0.0.4 (xcode8: d1ee3ba)
-# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.4/lib/mtouch/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.4/lib/mtouch/mtouch.exe \
+# Version: 10.0.0.6 (xcode8: 6c3fee4)
+# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/lib/mtouch/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/lib/mtouch/mtouch.exe \
 	--cache \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
@@ -41,13 +41,19 @@
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/packages/Prism.Unity.Forms.6.2.0/lib/Xamarin.iOS1.0/Prism.Unity.Forms.dll \
 	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.118-pre1/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/modernhttpclient.2.4.2/lib/Xamarin.iOS10/ModernHttpClient.dll \
 	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.118-pre1/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.118-pre1/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.Pages.2.3.3.152-pre2/lib/Xamarin.iOS10/Xamarin.Forms.Pages.dll \
 	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.118-pre1/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieReminder.dll \
 	-r \
@@ -319,13 +325,19 @@
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/packages/Prism.Unity.Forms.6.2.0/lib/Xamarin.iOS1.0/Prism.Unity.Forms.dll \
 	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.118-pre1/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/modernhttpclient.2.4.2/lib/Xamarin.iOS10/ModernHttpClient.dll \
 	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.118-pre1/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.118-pre1/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.Pages.2.3.3.152-pre2/lib/Xamarin.iOS10/Xamarin.Forms.Pages.dll \
 	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.118-pre1/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieReminder.dll \
 	-r \
@@ -334,8 +346,6 @@
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Plugin.Settings.dll \
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Plugin.Settings.Abstractions.dll \
-	-r \
-	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/Newtonsoft.Json.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug//MovieReminder.iOS.exe \

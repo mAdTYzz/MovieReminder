@@ -57,11 +57,16 @@ namespace MovieReminder
 		public SearchPageViewModel()
 		{
 			_searchCommand = new DelegateCommand(GetMovie, CanGetMovie);
-			_togglePlotCommand = new DelegateCommand(TogglePlot);
-
-			//SearchedMovie.PropertyChanged += SearchedMovie_PropertyChanged; //THROWS EXCEPTION!!!!
+			_togglePlotCommand = new DelegateCommand(TogglePlot);//, CanTogglePlot);
 
 			SearchedMovie = new MovieReminder_Models.Movie();
+			SearchedMovie.PropertyChanged += SearchedMovie_PropertyChanged;
+		}
+
+		void SearchedMovie_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+		{
+			//SearchCommand.RaiseCanExecuteChanged();
+			TogglePlotCommand.RaiseCanExecuteChanged();
 		}
 
 		private bool CanGetMovie()
@@ -103,14 +108,12 @@ namespace MovieReminder
 			}
 		}
 
-		void SearchedMovie_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-		{
-			SearchCommand.RaiseCanExecuteChanged();
-		}
-
 		void TogglePlot()
 		{
-			IsPlotVisible = !IsPlotVisible;
+			if (SearchedMovie!=null && SearchedMovie.Plot!=null && SearchedMovie.Plot.Length>1)
+			{
+				IsPlotVisible = !IsPlotVisible;
+			}
 		}
 	}
 }
