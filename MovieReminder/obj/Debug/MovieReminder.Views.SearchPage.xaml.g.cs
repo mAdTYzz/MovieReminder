@@ -17,8 +17,36 @@ namespace MovieReminder {
     public partial class SearchPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout HeaderStackLayout;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout MainInfoStackLayout;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout CastStackLayout;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ListView CastList;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout PlotStackLayout;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout TheaterStackLayout;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout MediaStackLayout;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(SearchPage));
+            HeaderStackLayout = this.FindByName <global::Xamarin.Forms.StackLayout>("HeaderStackLayout");
+            MainInfoStackLayout = this.FindByName <global::Xamarin.Forms.StackLayout>("MainInfoStackLayout");
+            CastStackLayout = this.FindByName <global::Xamarin.Forms.StackLayout>("CastStackLayout");
+            CastList = this.FindByName <global::Xamarin.Forms.ListView>("CastList");
+            PlotStackLayout = this.FindByName <global::Xamarin.Forms.StackLayout>("PlotStackLayout");
+            TheaterStackLayout = this.FindByName <global::Xamarin.Forms.StackLayout>("TheaterStackLayout");
+            MediaStackLayout = this.FindByName <global::Xamarin.Forms.StackLayout>("MediaStackLayout");
         }
     }
 }

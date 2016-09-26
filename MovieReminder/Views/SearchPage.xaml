@@ -6,55 +6,146 @@
 		prism:ViewModelLocator.AutowireViewModel="True" 
 		x:Class="MovieReminder.SearchPage"
 		Title="Search Movie"
-		Padding="5">
+		Padding="5"
+		Style="{StaticResource PageStyle}">
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style x:Key="PageStyle" TargetType="ContentPage">
+				<Setter Property="BackgroundColor" Value="#3B4042"/>
+			</Style>
+			
+			<Style x:Key="ButtonStyle" TargetType="Button">
+				<Setter Property="WidthRequest" Value="100"/>
+				
+				<Setter Property="FontAttributes" Value="Bold"/>
+				<Setter Property="FontSize" Value="16"/>
+				<Setter Property="TextColor" Value="#F58607"/>
+
+				<Setter Property="BorderColor" Value="#F58607"/>
+				<Setter Property="BorderWidth" Value="2"/>
+				<Setter Property="BorderRadius" Value="5"/>
+			</Style>
+
+			<Style x:Key="LabelStyle" TargetType="Label">
+				<Setter Property="FontAttributes" Value="Bold"/>
+				<Setter Property="FontSize" Value="16"/>
+				<Setter Property="TextColor" Value="#F58607"/>
+			</Style>
+
+			<Style x:Key="FrameContentStyle" TargetType="Frame">
+				<Setter Property="BackgroundColor" Value="White"/>
+				<Setter Property="HasShadow" Value="true"/>
+				<Setter Property="OutlineColor" Value="Silver"/>
+				<Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+			</Style>
+
+			<Style x:Key="ToggleButtonStyle" TargetType="Button">
+				<Setter Property="HorizontalOptions" Value="Start"/>
+				<Setter Property="HeightRequest" Value="15"/>
+				<Setter Property="Margin" Value="0,5,0,0"/>
+				<Setter Property="TextColor" Value="#F58607"/>
+				<Setter Property="FontAttributes" Value="Bold"/>
+				<Setter Property="FontSize" Value="16"/>
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
 
 	<ContentPage.Content>
 		<StackLayout Margin="0,15,0,0">
-			<Label Text="Search Movie" FontSize="14" FontAttributes="Bold" TextColor="#F0ED4A"/>
-			<Label Text="{Binding Path=SearchedMovie.PlotSummary}" 
-									HorizontalOptions="FillAndExpand"/>
+			<StackLayout x:Name="HeaderStackLayout" Orientation="Horizontal">
+				<Label Text="{Binding SearchPageInformationLabel}" TextColor="#F58607" FontAttributes="Bold"
+					VerticalOptions="CenterAndExpand"/>
+				<Button WidthRequest="30" HeightRequest="30" Image="ClearContent.png" 
+					HorizontalOptions="EndAndExpand" Command="{Binding ClearContentCommand}"/>
+			</StackLayout>
+				
 			<Image Source="{Binding Path=SearchedMovie.Poster}" Margin="0,5,0,0"
-				HorizontalOptions="Fill" HeightRequest="320" IsVisible="{Binding Path=IsMovieFound}"/>
-			<ScrollView>
+				HorizontalOptions="Fill" HeightRequest="320" IsVisible="{Binding Path=IsPosterAvailable}"/>
+			<ScrollView>				
 				<StackLayout>
 					<SearchBar Placeholder="Title..." Text="{Binding Path=SearchedMovie.Title}" 
 						HorizontalOptions="FillAndExpand" FontSize="14" FontAttributes="Bold"
-						SearchCommand="{Binding Path=SearchCommand}"/>
+						SearchCommand="{Binding Path=SearchCommand}"
+						IsVisible="{Binding IsSearchFieldVisible}"/>
 
 					<StackLayout>
-						<Button Text="Plot summary" FontSize="14" FontAttributes="Bold" 
-							HorizontalOptions="Start" HeightRequest="15" 
-							Command="{Binding Path=TogglePlotCommand}"
-							TextColor="#F0ED4A"/>
+						<StackLayout x:Name="MainInfoStackLayout">
+							<Button Text="Main Info" Style="{StaticResource ToggleButtonStyle}"
+								Command="{Binding Path=ToggleMainInfoCommand}"/> 
+							<Frame Style="{StaticResource FrameContentStyle}" 
+								IsVisible="{Binding Path=IsInfoFieldVisible}">
+								<StackLayout>
+									<StackLayout Orientation="Horizontal">
+										<Label Text="Year: "/>	
+										<Label Text="{Binding SearchedMovie.Year}"/>	
+									</StackLayout>
+									
+									<StackLayout Orientation="Horizontal">
+										<Label Text="Genre: "/>
+										<Label Text="{Binding SearchedMovie.Genre}"/>
+									</StackLayout>
+									
+									<StackLayout Orientation="Horizontal">
+										<Label Text="Runtime: "/>	
+										<Label Text="{Binding SearchedMovie.Runtime}"/>
+									</StackLayout>
+								</StackLayout>
+							</Frame>
+						</StackLayout>
 						
-						<Frame OutlineColor="Silver" HorizontalOptions="FillAndExpand" 
-								HasShadow="false" IsVisible="{Binding Path=IsPlotVisible}">
-							<Label Text="{Binding Path=SearchedMovie.Plot}" 
-									HorizontalOptions="FillAndExpand"/>
-						</Frame>
-					</StackLayout>
-					<StackLayout Margin="0,5,0,0">
-						<Label Text="Theater release date" FontSize="14" FontAttributes="Bold"
-							TextColor="#F0ED4A"/>
-						<StackLayout Orientation="Horizontal">
-							<DatePicker Date="{Binding Path=SearchedMovie.TheaterReleaseDate}" 
-								HorizontalOptions="FillAndExpand"
-								IsEnabled="false"
-								Format="yyyy-MM-dd"/>
-							<Button Text="Add Reminder" FontSize="14" FontAttributes="Bold" 
-								TextColor="#F0ED4A" BorderWidth="2" BorderColor="#F0ED4A"
-								Style="{StaticResource buttonStyle}"/>
+						<StackLayout x:Name="CastStackLayout">
+							<Button Text="Cast" Style="{StaticResource ToggleButtonStyle}" 
+									Command="{Binding ToggleCastCommand}"/>
+							<Frame Style="{StaticResource FrameContentStyle}" 
+								IsVisible="{Binding IsCastVisible}">
+								<ScrollView HeightRequest="125">
+									<ListView x:Name="CastList" HeightRequest="125" 
+											ItemsSource="{Binding SearchedMovie.Cast}"
+											BackgroundColor="White" SeparatorColor="White">
+										<ListView.ItemTemplate>
+											<DataTemplate>
+												<TextCell Text="{Binding Path=Name}"/> 
+											</DataTemplate>
+										</ListView.ItemTemplate>
+									</ListView>
+								</ScrollView>
+							</Frame>
 						</StackLayout>
 
-						<Label Text="Physical media release date" FontSize="14" FontAttributes="Bold"
-							TextColor="#F0ED4A"/>
-						<StackLayout Orientation="Horizontal">
-							<DatePicker Date="{Binding Path=SearchedMovie.DvdReleaseDate}" 
-								HorizontalOptions="FillAndExpand"
-								IsEnabled="false"
-								Format="yyyy-MM-dd"/>
-							<Button Text="Add Reminder" FontSize="14" FontAttributes="Bold"
-								TextColor="#F0ED4A"/>
+						<StackLayout x:Name="PlotStackLayout">
+							<Button Text="Plot summary" Style="{StaticResource ToggleButtonStyle}"
+								Command="{Binding Path=TogglePlotCommand}"/>			
+							<Frame Style="{StaticResource FrameContentStyle}" 
+								IsVisible="{Binding Path=IsPlotVisible}">
+								<Label Text="{Binding Path=SearchedMovie.Plot}" HorizontalOptions="FillAndExpand"/>
+							</Frame>
+						</StackLayout>
+					</StackLayout>
+
+					<StackLayout Margin="0,5,0,0">
+						<StackLayout x:Name="TheaterStackLayout">
+							<Label Text="Theater release date" Style="{StaticResource LabelStyle}"/>
+							<StackLayout Orientation="Horizontal">
+								<DatePicker Date="{Binding Path=SearchedMovie.TheaterReleaseDate}" 
+									HorizontalOptions="FillAndExpand"
+									IsEnabled="false"
+									Format="yyyy-MM-dd"/>
+								<Button Image="AddReminder.png" Style="{StaticResource ButtonStyle}"
+									HeightRequest="40"/>
+							</StackLayout>
+						</StackLayout>
+
+						<StackLayout x:Name="MediaStackLayout">
+							<Label Text="Media release date" Style="{StaticResource LabelStyle}"/>
+							<StackLayout Orientation="Horizontal">
+								<DatePicker Date="{Binding Path=SearchedMovie.DvdReleaseDate}" 
+									HorizontalOptions="FillAndExpand"
+									IsEnabled="false"
+									Format="yyyy-MM-dd"/>
+								<Button Image="AddReminder.png" Style="{StaticResource ButtonStyle}"
+									HeightRequest="40"/>
+							</StackLayout>
 						</StackLayout>
 					</StackLayout>
 				</StackLayout>

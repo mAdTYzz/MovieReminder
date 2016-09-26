@@ -1,24 +1,20 @@
 ﻿<Properties StartupConfiguration="{5D023465-A81C-4AA3-BEAA-7C9B453209EF}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieReminder/ViewModels/SearchPageViewModel.cs">
     <Files>
-      <File FileName="MovieReminder/ViewModels/SearchPageViewModel.cs" Line="63" Column="67" />
-      <File FileName="MovieReminder.iOS/AppDelegate.cs" Line="29" Column="1" />
+      <File FileName="MovieReminder/ViewModels/SearchPageViewModel.cs" Line="218" Column="3" />
+      <File FileName="MovieReminder_Models/Models/Movie.cs" Line="99" Column="33" />
+      <File FileName="MovieReminder_Models/Models/Actor.cs" Line="6" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MovieReminder" expanded="True">
             <Node name="MovieReminder" expanded="True">
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="MainPage.xaml" expanded="True" />
-                <Node name="UpcomingPage.xaml" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="SearchPageViewModel.cs" selected="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
             </Node>
-            <Node name="MovieReminder.iOS" expanded="True">
-              <Node name="AppDelegate.cs" selected="True" />
-            </Node>
+            <Node name="MovieReminder.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -27,16 +23,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint enabled="false" file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/ViewModels/SearchPageViewModel.cs" line="106" column="1" />
+      <Breakpoint enabled="false" file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/ViewModels/SearchPageViewModel.cs" line="189" column="1" />
       <Breakpoint enabled="false" file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder_MovieDBWrap/Services/MovieService.cs" line="90" column="1" />
       <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder_MovieDBWrap/Services/MovieService.cs" line="48" column="1" />
       <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder_MovieDBWrap/Services/MovieService.cs" line="62" column="1" />
       <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieService/MovieService.cs" line="32" column="1" />
       <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieService/MovieService.cs" line="21" column="1" />
       <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieService/MovieService.cs" line="39" column="1" />
-      <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/Services/MovieService.cs" line="66" column="6" />
-      <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/Services/MovieService.cs" line="82" column="1" />
-      <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/Views/MainPage.xaml.cs" line="9" column="1" />
+      <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/Services/MovieService.cs" line="73" column="6" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

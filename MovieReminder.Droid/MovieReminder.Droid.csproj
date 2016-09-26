@@ -124,6 +124,8 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
+    <None Include="Resources\AddReminder.png" />
+    <None Include="Resources\ClearContent.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\layout\" />

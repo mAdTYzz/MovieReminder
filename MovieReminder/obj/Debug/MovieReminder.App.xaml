@@ -5,18 +5,19 @@
 		xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
 		x:Class="MovieReminder.App">
 
-	<Application.Resources>
+<!--	<prism:PrismApplication.Resources>
 		<ResourceDictionary>
-			 <Style x:Key="buttonStyle" TargetType="Button">
+			 <Style x:Key="ButtonStyle" TargetType="Button">
+				<Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="VerticalOptions" Value="CenterAndExpand" />
-                <Setter Property="BorderColor" Value="White" />
-                <Setter Property="BorderRadius" Value="5" />
-                <Setter Property="BorderWidth" Value="5" />
+                <Setter Property="BorderColor" Value="Black" />
+                <Setter Property="BorderRadius" Value="3" />
+                <Setter Property="BorderWidth" Value="10" />
                 <Setter Property="WidthRequest" Value="200" />
                 <Setter Property="TextColor" Value="Teal" />
 				<Setter Property="FontSize" Value="22"/>
             </Style>
 		</ResourceDictionary>
-	</Application.Resources>
+	</prism:PrismApplication.Resources>-->
 </prism:PrismApplication>

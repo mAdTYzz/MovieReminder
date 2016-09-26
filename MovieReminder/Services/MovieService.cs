@@ -56,11 +56,18 @@ namespace MovieReminder
 					string json = omdbApiClient.GetStringAsync(webUri).Result;
 
 					Movie mv = JsonConvert.DeserializeObject<Movie>(json);
+
 					mv.TheaterReleaseDate = SetMinimumDateIfValueNull(mv.Released);
 					mv.DvdReleaseDate = SetMinimumDateIfValueNull(mv.Dvd);
-					mv.FoundWithApi = true;
 
-					return mv;
+					if (String.IsNullOrWhiteSpace(mv.imdbID)==false)
+					{
+						mv.FoundWithApi = true;
+
+						return mv;
+					}
+					else
+						return new Movie();
 				}
 				catch (Exception ex)
 				{
