@@ -61,5 +61,6 @@
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/Mono.CSharp.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/System.ComponentModel.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/MovieReminder_Models.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/Plugin.Calendars.Abstractions.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/Plugin.Settings.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.Droid/obj/Debug/android/assets/Plugin.Settings.Abstractions.dll

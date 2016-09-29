@@ -42,5 +42,9 @@
 	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
 	<key>CFBundleName</key>
 	<string>MovieReminder</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Used to add events to the calendar</string>
+	<key>XSLaunchImageAssets</key>
+	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
 </dict>
 </plist>

@@ -96,7 +96,7 @@ namespace MovieReminder_Models
 
 				if (String.IsNullOrWhiteSpace(value)==false)
 				{
-					InitializeCastCollection();
+					Cast = new ObservableCollection<Actor>();
 				}
 			}
 		}
@@ -147,11 +147,16 @@ namespace MovieReminder_Models
 			}
 		}
 
-		private decimal _imdbRating;
-		public decimal imdbRating
+		private string _imdbRating;
+		public string imdbRating
 		{
 			get { return _imdbRating; }
-			set { SetProperty(ref _imdbRating, value); }
+			set 
+			{
+				value = ValidateAndConvertRating(value.ToString());
+				
+				SetProperty(ref _imdbRating, value); 
+			}
 		}
 
 		private bool _foundWithApi=false;
@@ -166,9 +171,16 @@ namespace MovieReminder_Models
 				
 		}
 
-		private void InitializeCastCollection()
+		private string ValidateAndConvertRating(string setValue)
 		{
-			Cast = new ObservableCollection<Actor>();
+			try
+			{
+				return (Convert.ToDecimal(setValue)).ToString();;
+			}
+			catch (Exception)
+			{
+				return "0";
+			}
 		}
 	}
 }

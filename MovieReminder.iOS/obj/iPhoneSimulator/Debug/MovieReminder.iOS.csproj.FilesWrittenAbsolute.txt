@@ -21,3 +21,5 @@
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/MovieReminder_Models.dll.mdb
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Plugin.Settings.dll
 /Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Plugin.Settings.Abstractions.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Plugin.Calendars.Abstractions.dll
+/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/bin/iPhoneSimulator/Debug/Plugin.Calendars.dll

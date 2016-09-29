@@ -5,12 +5,13 @@ using Newtonsoft.Json;
 using Prism.Commands;
 using Prism.Mvvm;
 
-namespace MovieReminder
+namespace MovieReminder //TEST WITH MOVIE: FRIEND REQUEST (THEATER: 2016-10-07, DVD: N/A)
 {
 	public class SearchPageViewModel : BindableBase
 	{
-		#region Commands and Properties
+		#region Commands, Properties and other good
 
+		#region Commands
 		private DelegateCommand _searchCommand;
 		public DelegateCommand SearchCommand
 		{
@@ -46,6 +47,15 @@ namespace MovieReminder
 			set { SetProperty(ref _toggleCastCommand, value); }
 		}
 
+		private DelegateCommand _addTheaterReminderCommand;
+		public DelegateCommand AddTheaterReminderCommand
+		{
+			get { return _addTheaterReminderCommand; }
+			set { SetProperty(ref _addTheaterReminderCommand, value); }
+		}
+		#endregion
+
+		#region Properties
 		private MovieReminder_Models.Movie _searchedMovie;
 		public MovieReminder_Models.Movie SearchedMovie
 		{
@@ -57,7 +67,7 @@ namespace MovieReminder
 		public string SearchPageInformationLabel
 		{
 			get { return _searchPageInformationLabel; }
-			set 
+			set
 			{
 				if (SearchedMovie.imdbID != null)
 				{
@@ -65,12 +75,20 @@ namespace MovieReminder
 				}
 				else
 					_searchPageInformationLabel = "Movie not found!";
-				
-				SetProperty(ref _searchPageInformationLabel, value); 
+
+				SetProperty(ref _searchPageInformationLabel, value);
 			}
 		}
 
-		#region Toggle variables
+		//private List<MovieReminder_Models.Movie> _foundMoviesList;
+		//public List<MovieReminder_Models.Movie> FoundMoviesList
+		//{
+		//	get { return _foundMoviesList; }
+		//	set { SetProperty(ref _foundMoviesList, value); }
+		//}
+		#endregion
+
+		#region Var
 
 		private bool _isPosterAvailable;
 		public bool IsPosterAvailable
@@ -117,27 +135,38 @@ namespace MovieReminder
 			set { SetProperty(ref _isCastVisible, value); }
 		}
 
-		#endregion
-
-		private List<MovieReminder_Models.Movie> _foundMoviesList;
-		public List<MovieReminder_Models.Movie> FoundMoviesList
-		{
-			get { return _foundMoviesList; }
-			set { SetProperty(ref _foundMoviesList, value); }
-		}
+		private IReminderService _reminderService;
 
 		#endregion
 
-		public SearchPageViewModel()
+		#endregion
+
+		public SearchPageViewModel(IReminderService reminderService)
 		{
 			_searchCommand = new DelegateCommand(GetMovie, CanGetMovie);
 			_togglePlotCommand = new DelegateCommand(TogglePlot);
 			_clearContentCommand = new DelegateCommand(ClearContent);
 			_toggleMainInfoCommand = new DelegateCommand(ToggleMainInfo);
 			_toggleCastCommand = new DelegateCommand(ToggleCast);
+			_addTheaterReminderCommand = new DelegateCommand(AddTheaterReminder);//, CanAddTheaterReminder);
+
+			_reminderService = reminderService;
 
 			SearchedMovie = new MovieReminder_Models.Movie();
 			SearchedMovie.PropertyChanged += SearchedMovie_PropertyChanged;
+
+			//REMOVE LATER!!!
+			//ChangeDateAndTitleForTest(); 
+		}
+
+
+		//CHANGING THATER RELEASE DATE TO TOMORROW FOR TESTING OF THE REMINDER
+		void ChangeDateAndTitleForTest()
+		{
+			SearchedMovie.TheaterReleaseDate = DateTime.Today.AddDays(1);
+
+			SearchedMovie.Title = "TestMovieTitle";
+			SearchedMovie.Plot = "BLABLABLABLA AND BLABLABLA";
 		}
 
 		void SearchedMovie_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -146,6 +175,7 @@ namespace MovieReminder
 			TogglePlotCommand.RaiseCanExecuteChanged();
 			ClearContentCommand.RaiseCanExecuteChanged();
 			ToggleMainInfoCommand.RaiseCanExecuteChanged();
+			AddTheaterReminderCommand.RaiseCanExecuteChanged();
 		}
 
 		private bool CanGetMovie()
@@ -222,6 +252,51 @@ namespace MovieReminder
 			{
 				IsCastVisible = !IsCastVisible;
 			}
+		}
+
+		//bool CanAddTheaterReminder()
+		//{
+		//	bool canDo = false;
+
+		//	if (SearchedMovie.TheaterReleaseDate > DateTime.Today && String.IsNullOrWhiteSpace(SearchedMovie.Title)==false)
+		//	{
+		//		canDo = true;
+		//	}
+
+		//	return canDo;
+		//}
+
+		void AddTheaterReminder()
+		{
+			if (SearchedMovie.TheaterReleaseDate > DateTime.Today && String.IsNullOrWhiteSpace(SearchedMovie.Title) == false)
+			{
+				DateTime reminderDate = SearchedMovie.TheaterReleaseDate.AddDays(-1); //Setting the date back with one day...
+				if (_reminderService.AddReminder(reminderDate, EventTitleSetter(), EventNotesSetter()) == true)
+				{
+					ClearContent();
+				}
+				else
+					SearchedMovie.Title = "Error!";
+			}
+		}
+
+		string EventTitleSetter()
+		{
+			return SearchedMovie.Title + " is showing tomorrow! "; 
+		}
+
+		string EventNotesSetter() //#MOVIETITLE is used to check if the event is allready set
+		{
+			string notes = string.Empty;
+
+			if (String.IsNullOrWhiteSpace(SearchedMovie.Plot) == false)
+			{
+				notes = SearchedMovie.Plot + String.Format("\n#{0}",SearchedMovie.Title);
+			}
+			else
+				notes = String.Format("#{0}", SearchedMovie.Title);
+
+			return notes;
 		}
 	}
 }

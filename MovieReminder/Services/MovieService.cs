@@ -69,7 +69,7 @@ namespace MovieReminder
 					else
 						return new Movie();
 				}
-				catch (Exception ex)
+				catch (Exception ex) //Searching for "Middle school" throws exception about the rating!
 				{
 					return null;
 				}

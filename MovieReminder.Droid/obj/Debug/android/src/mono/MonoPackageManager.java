@@ -148,6 +148,7 @@ class MonoPackageManager_Resources {
 		"System.Text.Encoding.Extensions.dll",
 		"System.ComponentModel.dll",
 		"MovieReminder_Models.dll",
+		"Plugin.Calendars.Abstractions.dll",
 		"Plugin.Settings.dll",
 		"Plugin.Settings.Abstractions.dll",
 	};

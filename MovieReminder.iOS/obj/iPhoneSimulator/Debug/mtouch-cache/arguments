@@ -55,6 +55,10 @@
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/CClarke.Plugin.Calendars.0.6.10-beta/lib/Xamarin.iOS10/Plugin.Calendars.Abstractions.dll \
+	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/CClarke.Plugin.Calendars.0.6.10-beta/lib/Xamarin.iOS10/Plugin.Calendars.dll \
+	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieReminder.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
@@ -338,6 +342,10 @@
 	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/packages/Xamarin.Forms.2.3.2.127/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/CClarke.Plugin.Calendars.0.6.10-beta/lib/Xamarin.iOS10/Plugin.Calendars.Abstractions.dll \
+	-r \
+	/Users/olik_/Code/GitHub/MovieReminder/packages/CClarke.Plugin.Calendars.0.6.10-beta/lib/Xamarin.iOS10/Plugin.Calendars.dll \
 	-r \
 	/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/bin/Debug/MovieReminder.dll \
 	-r \
