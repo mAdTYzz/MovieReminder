@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{5D023465-A81C-4AA3-BEAA-7C9B453209EF}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieReminder/ViewModels/SearchPageViewModel.cs">
     <Files>
-      <File FileName="MovieReminder/ViewModels/SearchPageViewModel.cs" Line="276" Column="6" />
-      <File FileName="MovieReminder.iOS/IOSReminderService.cs" Line="82" Column="40" />
+      <File FileName="MovieReminder/ViewModels/SearchPageViewModel.cs" Line="159" Column="6" />
+      <File FileName="MovieReminder.iOS/IOSReminderService.cs" Line="131" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -18,12 +18,8 @@
       <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/Services/MovieService.cs" line="73" column="6" />
       <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/Services/ReminderService.cs" line="82" column="1" />
       <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/Services/ReminderService.cs" line="52" column="1" />
-      <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/IOSReminderService.cs" line="163" column="1" />
-      <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/IOSReminderService.cs" line="114" column="1" />
-      <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/IOSReminderService.cs" line="186" column="1" />
-      <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/IOSReminderService.cs" line="62" column="1" />
+      <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder.iOS/IOSReminderService.cs" line="191" column="1" />
       <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder_Models/Models/Movie.cs" line="154" column="1" />
-      <Breakpoint file="/Users/olik_/Code/GitHub/MovieReminder/MovieReminder/ViewModels/SearchPageViewModel.cs" line="270" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

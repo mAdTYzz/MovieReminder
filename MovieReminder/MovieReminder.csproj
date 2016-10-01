@@ -56,6 +56,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SearchPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UpcomingPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -140,12 +141,6 @@
     </Reference>
     <Reference Include="XLabs.Forms">
       <HintPath>..\packages\XLabs.Forms.2.0.0\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.Iconize">
-      <HintPath>..\packages\Xam.Plugin.Iconize.1.5.0-beta1\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Plugin.Iconize.dll</HintPath>
-    </Reference>
-    <Reference Include="FormsPlugin.Iconize">
-      <HintPath>..\packages\Xam.FormsPlugin.Iconize.1.5.0-beta1\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\FormsPlugin.Iconize.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

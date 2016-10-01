@@ -14,7 +14,6 @@
 			<Style x:Key="PageStyle" TargetType="ContentPage">
 				<Setter Property="BackgroundColor" Value="#3B4042"/>
 			</Style>
-			
 			<Style x:Key="ButtonStyle" TargetType="Button">
 				<Setter Property="WidthRequest" Value="100"/>
 				
@@ -61,7 +60,7 @@
 			</StackLayout>
 				
 			<Image Source="{Binding Path=SearchedMovie.Poster}" Margin="0,5,0,0"
-				HorizontalOptions="Fill" HeightRequest="320" IsVisible="{Binding Path=IsPosterAvailable}"/>
+				HorizontalOptions="Fill" HeightRequest="320" IsVisible="{Binding Path=IsPosterAvailable}"/> 
 			<ScrollView>				
 				<StackLayout>
 					<SearchBar Placeholder="Title..." Text="{Binding Path=SearchedMovie.Title}" 
@@ -105,7 +104,6 @@
 											BackgroundColor="White" SeparatorColor="White">
 										<ListView.ItemTemplate>
 											<DataTemplate>
-												<!--<TextCell Text="{Binding Path=Name}"/> -->
 												<ViewCell>
 													<Button Text="{Binding Path=Name}" HorizontalOptions="Start"/>
 												</ViewCell>
@@ -125,7 +123,7 @@
 							</Frame>
 						</StackLayout>
 					</StackLayout>
-					
+
 					<StackLayout Margin="0,5,0,0">
 						<StackLayout x:Name="TheaterStackLayout">
 							<Label Text="Theater release date" Style="{StaticResource LabelStyle}"/>
@@ -134,7 +132,7 @@
 									HorizontalOptions="FillAndExpand"
 									IsEnabled="false"
 									Format="yyyy-MM-dd"/>
-								<Button Image="AddReminder.png" Style="{StaticResource ButtonStyle}"
+								<Button Text="&#xf1f3;" FontFamily="FontAwesome" Style="{StaticResource ButtonStyle}"
 									HeightRequest="40" Command="{Binding AddTheaterReminderCommand}"/>
 							</StackLayout>
 						</StackLayout>

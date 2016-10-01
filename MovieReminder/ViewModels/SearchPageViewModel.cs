@@ -160,7 +160,7 @@ namespace MovieReminder //TEST WITH MOVIE: FRIEND REQUEST (THEATER: 2016-10-07, 
 		}
 
 
-		//CHANGING THATER RELEASE DATE TO TOMORROW FOR TESTING OF THE REMINDER
+		//CHANGING THEATER RELEASE DATE TO TOMORROW FOR TESTING OF THE REMINDER
 		void ChangeDateAndTitleForTest()
 		{
 			SearchedMovie.TheaterReleaseDate = DateTime.Today.AddDays(1);
@@ -254,47 +254,51 @@ namespace MovieReminder //TEST WITH MOVIE: FRIEND REQUEST (THEATER: 2016-10-07, 
 			}
 		}
 
-		//bool CanAddTheaterReminder()
-		//{
-		//	bool canDo = false;
-
-		//	if (SearchedMovie.TheaterReleaseDate > DateTime.Today && String.IsNullOrWhiteSpace(SearchedMovie.Title)==false)
-		//	{
-		//		canDo = true;
-		//	}
-
-		//	return canDo;
-		//}
-
 		void AddTheaterReminder()
 		{
 			if (SearchedMovie.TheaterReleaseDate > DateTime.Today && String.IsNullOrWhiteSpace(SearchedMovie.Title) == false)
 			{
 				DateTime reminderDate = SearchedMovie.TheaterReleaseDate.AddDays(-1); //Setting the date back with one day...
-				if (_reminderService.AddReminder(reminderDate, EventTitleSetter(), EventNotesSetter()) == true)
+				if (_reminderService.AddReminder(reminderDate, SearchedMovie.Title, EventNotesSetter()) == true)
 				{
 					ClearContent();
 				}
-				else
-					SearchedMovie.Title = "Error!";
 			}
 		}
 
-		string EventTitleSetter()
+		public static string TitleHashTagConverter(string movieTitle) //#MOVIETITLE is used to check if the event is allready set
 		{
-			return SearchedMovie.Title + " is showing tomorrow! "; 
+			string titleHashtag = string.Empty;
+			int whiteSpaceIndex = -1;
+
+			foreach (var item in movieTitle)
+			{
+				if (item != ' ')
+				{
+					if (movieTitle.IndexOf(item) == whiteSpaceIndex + 1)//Capitalizing the first letter after space ;)
+					{
+						titleHashtag += Char.ToUpper(item);
+					}
+					else
+						titleHashtag += item;
+				}
+				else
+					whiteSpaceIndex = movieTitle.IndexOf(item);
+			}
+
+			return titleHashtag = "#"+titleHashtag;
 		}
 
-		string EventNotesSetter() //#MOVIETITLE is used to check if the event is allready set
+		string EventNotesSetter() 
 		{
 			string notes = string.Empty;
 
 			if (String.IsNullOrWhiteSpace(SearchedMovie.Plot) == false)
 			{
-				notes = SearchedMovie.Plot + String.Format("\n#{0}",SearchedMovie.Title);
+				notes = SearchedMovie.Plot + String.Format("\n{0}",TitleHashTagConverter(SearchedMovie.Title));
 			}
 			else
-				notes = String.Format("#{0}", SearchedMovie.Title);
+				notes = TitleHashTagConverter(SearchedMovie.Title);
 
 			return notes;
 		}

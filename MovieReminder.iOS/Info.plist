@@ -46,5 +46,9 @@
 	<string>Used to add events to the calendar</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Resources/FontAwesome.ttf</string>
+	</array>
 </dict>
 </plist>

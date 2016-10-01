@@ -8,6 +8,11 @@ namespace MovieReminder
 {
 	public partial class App : PrismApplication
 	{
+		public App()
+		{
+
+		}
+
 		public App(IPlatformInitializer initializer = null) : base(initializer)
 		{
 

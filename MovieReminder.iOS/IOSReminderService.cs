@@ -106,28 +106,31 @@ namespace MovieReminder.iOS
 		{
 			bool operationSuccessfull = false;
 
+			startDateTime = startDateTime.AddHours(12); //Setting the time of the event to noon
+
 			if (accessGranted==true)
 			{
 				//Add reminder code
 				if (CalendarInit() == null) //If no error is thrown
 				{
-					if (CheckIfEventExists(title)==false)
+					if (CheckIfEventExists(title,startDateTime)==false)
 					{
 						NSError error = null;
 
 						EKEvent movieEvent = EKEvent.FromStore(EventStore);
-
-						startDateTime = startDateTime.AddHours(12); //Setting the time of the event to noon
 
 						/* For testing!!
 						 movieEvent.StartDate = (NSDate)(startDateTime.AddHours(1).AddMinutes(45));
 						movieEvent.EndDate = (NSDate)(startDateTime.AddHours(2).AddMinutes(45));
 						movieEvent.AddAlarm(EKAlarm.FromDate((NSDate)startDateTime.AddHours(1).AddMinutes(45)));
 						 */
-
+						title += " is showing tomorrow! ";
 						movieEvent.StartDate = ConvertDateTimeToNSDate(startDateTime);
 						movieEvent.EndDate = ConvertDateTimeToNSDate(startDateTime.AddHours(1));
+
 						movieEvent.AddAlarm(EKAlarm.FromDate(ConvertDateTimeToNSDate(startDateTime)));
+						//movieEvent.AddAlarm(EKAlarm.FromDate((NSDate)startDateTime.AddMinutes(5)));
+
 						movieEvent.Title = title;
 						movieEvent.Notes = body;
 						movieEvent.Calendar = MovieReminderWorkCalendar;
@@ -156,27 +159,29 @@ namespace MovieReminder.iOS
 			return (NSDate)date;
 		}
 
-		public bool CheckIfEventExists(string movieTitle)
+		public bool CheckIfEventExists(string movieTitle, DateTime eventDate)
 		{
 			bool eventExists = false;
-
-			MovieReminderWorkCalendar = AssignMovieReminderCalendar();
 
 			if (MovieReminderWorkCalendar!=null)
 			{
 				try
 				{
-					string calendarID = MovieReminderWorkCalendar.CalendarIdentifier;
+					EKCalendar[] activeCalendars = new EKCalendar[1];
+					activeCalendars[0] = MovieReminderWorkCalendar;
 
-					EKCalendarItem[] movieReminderStartDateEvents = EventStore.GetCalendarItems(calendarID); //NEED SOMETHING ELSE!!!
+					NSPredicate eventQuery = EventStore.PredicateForEvents(ConvertDateTimeToNSDate(eventDate), ConvertDateTimeToNSDate(eventDate.AddHours(1))
+					                                                       , activeCalendars);
 
-					if (movieReminderStartDateEvents != null && movieReminderStartDateEvents.Count() > 0)
+					EKCalendarItem[] foundEvents = EventStore.EventsMatching(eventQuery);
+
+					if (foundEvents != null && foundEvents.Count() > 0)
 					{
-						EKCalendarItem existingEvent = (from x in movieReminderStartDateEvents
-														where x.Notes.Contains(String.Format("#{0}", movieTitle))
-														select x).FirstOrDefault();
+						EKCalendarItem foundEvent = (from x in foundEvents
+						                             where x.Notes.Contains(SearchPageViewModel.TitleHashTagConverter(movieTitle))
+													 select x).FirstOrDefault(); 
 
-						if (existingEvent != null) 
+						if (foundEvent != null)
 						{
 							eventExists = true;
 						}
